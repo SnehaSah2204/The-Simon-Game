@@ -4,7 +4,13 @@ var buttonColors=["red", "blue", "green", "yellow"];
 var count=1;
 var level=0;
 // starting the game 
-document.addEventListener("keypress",function(){
+ document.addEventListener("keypress",function(){
+  if(count===1){
+  $("h1").text("Level "+  level);
+  nextSequence();
+  count++;
+}});
+document.addEventListener("click",function(){
   if(count===1){
   $("h1").text("Level "+  level);
   nextSequence();
