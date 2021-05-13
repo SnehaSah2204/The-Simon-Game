@@ -10,7 +10,6 @@ var level=0;
   nextSequence();
   count++;
 }});
-alert("Working");
 document.addEventListener("click",function(){
   if(count===1){
   $("h1").text("Level "+  level);
